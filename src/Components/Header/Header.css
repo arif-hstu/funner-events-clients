@@ -1,0 +1,33 @@
+.Header {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-areas: 
+	'logo logo . . . . nav nav nav nav nav nav';
+	margin-top: 4%;
+}
+
+
+.Header .logoHolder {
+	grid-area: logo;
+}
+
+.Header .logoHolder img {
+	width: 100%;
+	justify-self: start;
+}
+.Header nav {
+	grid-area: nav;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*grid-template-columns: repeat(6, 1fr);*/
+}
+
+.Header nav > * {
+	text-decoration: none;
+	color: black;
+	font-size: 0.9rem;
+}
+
+
+

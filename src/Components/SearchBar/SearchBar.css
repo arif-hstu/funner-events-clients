@@ -1,0 +1,26 @@
+.SearchBar {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-areas: 
+	'. searchContent searchContent searchContent .' 
+}
+
+.SearchBar .searchContent{
+	grid-area: searchContent;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center
+}
+
+.SearchBar .searchContent .inputFields {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.SearchBar .searchContent .inputFields input:nth-of-type(1){
+	width: 60%;
+} 
