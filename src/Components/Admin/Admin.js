@@ -10,18 +10,21 @@ import Sidebar from '../Sidebar/Sidebar'
 import Dashboard from '../Dashboard/Dashboard'
 function Admin() {
 	return (
-		<div className= 'Admin'>
-			<Sidebar />
-			<Router>
-				<switch>
-				<Route exact path='/admin/dashboard'>
-					
-					<Dashboard />
-				</Route>
-				</switch>
-			</Router>
+		<div className='Admin'>
+			<div className='SidebarHolder'>
+				<Sidebar />
+			</div>
+			<div className='DashboardHolder'>
+				<Router>
+					<switch>
+						<Route exact path='/admin/dashboard'>
+							<Dashboard />
+						</Route>
+					</switch>
+				</Router>
+			</div>
 		</div>
 	)
 }
 
-export default Admin
+export default Admin; //to App
