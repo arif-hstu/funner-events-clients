@@ -24,6 +24,7 @@
 }
 
 .Header nav > * {
+	cursor: pointer;
 	text-decoration: none;
 	color: black;
 	font-size: 0.9rem;
